@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>零基础HMTL代码</title>
+	<style type="text/css">
+	/*common style*/
+	*{margin: 0; padding: 0;}
+	body{background-color: #ccc; font-family: Microsoft Yahei "微软雅黑"; min-width: 800px;}
+	.fl{float: left;}
+	.fr{float: right;}
+	/*single style*/
+	.head{width: 100%; height: 60px; background-color: #000;}
+	.pic{width: 100px; height: 60px; margin-left: 20px;}
+	.nav{float: right; list-style-type: none; height: 60px; line-height: 60px;}
+	.nav li{float: left; color: #fff; width: 80px; text-align: center; cursor: pointer;}
+	.nav li:hover{color: #F5F5F5;}
+	.rPart{display: block; width: 370px; height:500px; background-color: #fff; padding: 15px; border-bottom: 3px solid #666; border-right: 3px solid #666;  margin-top: 20px; margin-right: 20px;}
+	.title{border-left: 3px solid #ccc; width: 100%; height: 40px; line-height: 40px; padding-left: 10px; font-weight: bold; font-size: 15px;}
+	.rowBlock{width: 100%; overflow: auto; margin-top: 10px;}
+	.des{text-align: right; width: 30%;}
+	.ope{width: 66%;}
+	.tips{font-size: 10px; color: #999; height: 20px;}
+	.submit{width: 100%; height: 40px; border-radius: 10px; background-color: #0000CD; border: 0; color: #fff; font-weight: bold; font-size: 15px; margin-top: 15px;}
+	.lPart{min-width: 300px; margin-right: 450px;}
+	.part1, .part2, .part3, .part4{background-color: #fff; padding: 20px; border-bottom: 3px solid #666; border-right: 3px solid #666; margin-top: 20px; margin-left: 20px;}
+	.titleOne, .titleTwo{font-weight: bold;}
+	.titleTwo{color: #999; margin-top: 15px;}
+	.plus{color: #999; font-size: 12px;}
+	.part1 p, .part2 p{text-indent: 30px;}
+	.lPart ul{list-style-type: none;}
+	.part1 img, .part2 img{width: 300px; height: 200px;}
+	.picBox{display: inline-block; width: 120px; height: 130px; border: 1px solid #999; padding: 10px; margin: 10px;}
+	.picBox p{text-align: center;}
+	.picBox img{width: 100px; height: 80px;}
+	.part4 ol{margin-top: 10px; font-size: 15px; margin-left: 40px; margin-bottom: 20px;}
+	.part4 table{width: 100%; border: 1px solid #ccc; border-collapse: collapse; }
+	.part4 td{border: 1px solid #ccc; height: 20px;}
+	.part4 th, .part4 td{text-indent: 5px;}
+	.part4 table th{color: #fff; font-weight: bold;}
+	.part4 .last{background-color: #ccc;}
+	.foot{width: 100%; height: 50px; margin-top: 20px; background-color: #000; color: #fff; font-weight: bold; text-align: center; line-height: 50px;}
+	</style>
+</head>
+<body>
+	<div class="head">
+		<img class="pic fl" src="images/baidu.jpg" alt=""/>
+		<ul class="nav">
+			<li>导航链一</li>
+			<li>导航链二</li>
+			<li>导航链三</li>
+			<li>导航链四</li>
+		</ul>
+	</div>
+	<form class="rPart fr" action="./" method="post" enctype="form/data-multipy">
+		<p class="title">这里以后就是一个侧栏，这是侧栏的标题</p>
+		<div class="rowBlock">
+			<div class="des fl">请输入邮箱地址</div>
+			<div class="ope fr">
+				<input type="text" value="这是一个文本输入框"/>
+				<div class="tips">邮箱地址请按要求格式输入</div>
+			</div>
+		</div>
+		<div class="rowBlock">
+			<div class="des fl">请输入密码</div>
+			<div class="ope fr">
+				<input type="password" value="baiduqianduan"/>
+			</div>
+		</div>
+		<div class="rowBlock">
+			<div class="des fl">请重复输入密码</div>
+			<div class="ope fr">
+				<input type="password" value="baiduqianduan"/>
+				<div class="tips">密码是6-16位的英文数字</div>
+			</div>
+		</div>
+		<div class="rowBlock">
+			<div class="des fl">性别</div>
+			<div class="ope fr">
+				<input type="radio" name="sex" checked="checked" value="1"/>男
+				<input type="radio" name="sex" value="0"/>女
+			</div>
+		</div>
+		<div class="rowBlock">
+			<div class="des fl">城市</div>
+			<div class="ope fr">
+				<select>
+					<option>北京</option>
+					<option>上海</option>
+					<option>天津</option>
+					<option>重庆</option>
+				</select>
+			</div>
+		</div>
+		<div class="rowBlock">
+			<div class="des fl">爱好</div>
+			<div class="ope fr">
+				<input type="checkbox" name="sport" value="1"/>运动
+				<input type="checkbox" name="art" value="2"/>艺术
+				<input type="checkbox" name="science" value="3"/>科学
+			</div>
+		</div>
+		<div class="rowBlock">
+			<div class="des fl">个人描述</div>
+			<div class="ope fr">
+				<textarea class="intro" cols="25" rows="5">这是一个多行输入框，输入您的个人描述</textarea>
+			</div>
+		</div>
+		<input type="submit" class="submit" value="确认提交"/>
+	</form>
+	<div class="lPart">
+		<div class="part1">
+			<h3 class="titleOne">文章一级标题</h3>
+			<h4 class="titleTwo">文章二级标题</h4>
+			<span class="plus">文章作者 文章发表时间</span>
+			<p>这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落，这是一个很长很长的段落,这是一个很长很长的段落，这是一个很长很长的段落,这是一个很长很长的段落，这是一个很长很长的段落,这是一个很长很长的段落，这是一个很长很长的段落,换行了</p>
+			<p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了</p>
+			<p>这是一个很长很长的段落，这是一个很长很长的段落，
+			<a href="http://ife.baidu.com">这里有一个链接链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，<strong>这里有个粗体字</strong>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了</p>
+			<img src="images/pancel.jpg" alt=""/>
+			<p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了</p>
+			<p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落,<strong>这里有一个粗体字</strong>这是一个很长很长的段落，这是一个很长很长的段落，
+			<a href="http://ife.baidu.com">这里有一个链接点击后打开新窗口链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。</p>
+		</div>
+		<div class="part2">
+			<h3 class="titleOne">文章一级标题</h3>
+			<h4 class="titleTwo">文章二级标题</h4>
+			<span class="plus">文章作者 文章发表时间</span>
+			<p>这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落，这是一个很长很长的段落,这是一个很长很长的段落，这是一个很长很长的段落,这是一个很长很长的段落，这是一个很长很长的段落,这是一个很长很长的段落，这是一个很长很长的段落,换行了</p>
+			<p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了</p>
+			<p>这是一个很长很长的段落，这是一个很长很长的段落，
+			<a href="http://ife.baidu.com">这里有一个链接链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，<strong>这里有个粗体字</strong>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了</p>
+			<img src="images/pancel.jpg" alt=""/>
+			<ul>
+				<li>列表项目一</li>
+				<li>列表项目二</li>
+				<li>列表项目三</li>
+			</ul>
+		</div>
+		<div class="part3">
+			<h3 class="titleOne">图片</h3>
+			<div class="picBox">
+				<p>好看的图片</p>
+				<img src="images/pancel.jpg" alt=""/>
+			</div>
+			<div class="picBox">
+				<p>好看的图片</p>
+				<img src="images/pancel.jpg" alt=""/>
+			</div>
+			<div class="picBox">
+				<p>好看的图片</p>
+				<img src="images/pancel.jpg" alt=""/>
+			</div>
+			<div class="picBox">
+				<p>好看的图片</p>
+				<img src="images/pancel.jpg" alt=""/>
+			</div>
+			<div class="picBox">
+				<p>好看的图片</p>
+				<img src="images/pancel.jpg" alt=""/>
+			</div>
+			<div class="picBox">
+				<p>好看的图片</p>
+				<img src="images/pancel.jpg" alt=""/>
+			</div>
+			<div class="picBox">
+				<p>好看的图片</p>
+				<img src="images/pancel.jpg" alt=""/>
+			</div>
+			<div class="picBox">
+				<p>好看的图片</p>
+				<img src="images/pancel.jpg" alt=""/>
+			</div>
+			<div class="picBox">
+				<p>好看的图片</p>
+				<img src="images/pancel.jpg" alt=""/>
+			</div>
+			<div class="picBox">
+				<p>好看的图片</p>
+				<img src="images/pancel.jpg" alt=""/>
+			</div>
+		</div>
+		<div class="part4">
+			<h3 class="titleOne">最后一篇文章一级标题</h3>
+			<h4 class="titleTwo">文章二级标题</h4>
+			<span class="plus">文章作者 文章发表时间</span>
+			<ol>
+				<li>排名1</li>
+				<li>排名2</li>
+				<li>排名3</li>
+			</ol>
+			<p>下面是一个表格，我这里给表格加了一个border="1"好让你看出是一个表格，你们写html的时候不需要加</p>
+			<table width="100%" >
+				<thead bgcolor="#000">
+					<tr>
+						<th width="40%" align="left">表头</th>
+						<th width="40%" align="left">表头</th>
+						<th width="20%" align="left">表头</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>表格单元内容</td>
+						<td>表格单元内容</td>
+						<td><a href="#">操作</a></td>
+					</tr>
+					<tr>
+						<td>表格单元内容</td>
+						<td>表格单元内容</td>
+						<td><a href="#">操作</a></td>
+					</tr>
+					<tr>
+						<td>表格单元内容</td>
+						<td>表格单元内容</td>
+						<td><a href="#">操作</a></td>
+					</tr>
+					<tr>
+						<td>表格单元内容</td>
+						<td>表格单元内容</td>
+						<td><a href="#">操作</a></td>
+					</tr>
+					<tr class="last">
+						<td>总计</td>
+						<td>1000</td>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div class="foot">
+		Ison版权所有@
+	</div>
+</body>
+</html>
