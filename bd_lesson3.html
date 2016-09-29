@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>三栏式布局</title>
+	<style type="text/css">
+		#parent{height: auto; border: 1px solid #999; background-color: #eee; margin: 0 auto; padding: 20px; min-width: 600px; overflow: auto;}
+		#left{float: left; border: 1px solid #999; width: 160px; height: 80px; padding: 20px; background-color: #fff;}
+		#pic, #photo{display: block; width: 80px; height: 80px; background-color: #eee;}
+		#pic{float: left; }
+		#name{float: left; display: block; width: 80px; height: 80px; text-align: center;}
+		#right{float: right; margin-top: 0; width: 80px; height: auto; background-color: #fff; border: 1px solid #999; padding: 0 20px 20px 20px;}
+		#photo{margin-top: 20px;}
+		#middle{margin-left: 220px; margin-right: 140px; background-color: #fff; padding: 20px; border: 1px solid #999;}
+	    #middle p{margin: 0; padding: 0;}
+	</style>
+</head>
+<body>
+	<h1>三栏式布局:设置overflow:auto;可以让父元素包含其浮动的子元素</h1>
+	<div id="parent">
+		<div id="left">
+			<img src="" alt="团队logo" id="pic">
+			<div id="name">团队名称</div>
+		</div>
+		<div id="right">
+			<img src="" alt="个人logo" id="photo">
+			<img src="" alt="个人logo" id="photo">
+			<img src="" alt="个人logo" id="photo">
+			<img src="" alt="个人logo" id="photo">
+		</div>
+		<div id="middle">
+			<p> <h3>团队之名：蚁行者</h3>
+				<p>我们以蚁行者作为我们的创业团队的名字，是因为蚂蚁具有很多优秀的团队品质。我们将以其敏锐的洞察力、超强的沟通能力、出色的团队协作才能、勤奋顽强的精神及愿意牺牲的意识武装自己，让我们的团队像蚂蚁一样，出色、保质地完成每一个任务。</p><h3>团队成员：</h3>
+				<p>王幸娟、李邈宇、叶穗芬、刘之余、孙家堂、葛康</p>
+				<h3>团队的口号：</h3>
+				<p>一步一个脚印，一天一个开始。</p>
+				<h3>团队精神：</h3>
+				<p>团结、奋斗、牺牲的互助互爱的团队精神</p>
+ 			</p>
+		</div>
+	</div>
+</body>
+</html>
